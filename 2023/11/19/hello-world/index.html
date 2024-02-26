@@ -26,7 +26,7 @@
 <meta property="og:description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . Q">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-19T04:52:27.529Z">
-<meta property="article:modified_time" content="2024-01-15T08:50:29.181Z">
+<meta property="article:modified_time" content="2024-02-26T08:49:36.710Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -328,8 +328,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-15 16:50:29</span>
-            <span class="mobile">2024-01-15 16:50:29</span>
+            <span class="desktop">2024-02-26 16:49:36</span>
+            <span class="mobile">2024-02-26 16:49:36</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -340,7 +340,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>75 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>263 字</span>
         </span>
     
     
@@ -370,7 +370,7 @@
 <p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>xxxxxxxxxx LL calc(LL x, int dight) {    auto s &#x3D; std::to_string(x);    int n &#x3D; s.size();    std::vector dp(n, std::vector(n, std::vector(2, std::vector<LL>(2, -1))));    auto dfs &#x3D; [&amp;](auto self, int pos, LL cnt, bool is_limit, bool is_zero) -&gt; LL {        if (pos &#x3D;&#x3D; n) {            return cnt;        }        if (dp[pos][cnt][is_zero][is_limit] !&#x3D; -1) {            return dp[pos][cnt][is_zero][is_limit];        }        LL ans &#x3D; 0;        for (int i &#x3D; 0; i &lt;&#x3D; (is_limit ? s[pos] - ‘0’ : 9); i++) {            if (is_zero &amp;&amp; i &#x3D;&#x3D; 0) {                ans +&#x3D; self(self, pos + 1, cnt, is_limit &amp;&amp; i &#x3D;&#x3D; s[pos] - ‘0’, true);            } else {                ans +&#x3D; self(self, pos + 1, cnt + (i &#x3D;&#x3D; dight), is_limit &amp;&amp; i &#x3D;&#x3D; s[pos] - ‘0’, false);            }        }        dp[pos][cnt][is_zero][is_limit] &#x3D; ans;        return ans;    };​    return dfs(dfs, 0, 0, true, true);​}​void solve() {    LL l, r;    std::cin &gt;&gt; l &gt;&gt; r;    for (int i &#x3D; 0; i &lt; 10; i++) {        std::cout &lt;&lt; calc(r, i) - calc(l - 1, i) &lt;&lt; “ \n”[i &#x3D;&#x3D; 9];    }}cpp</p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
 
 <p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -391,7 +391,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-01-15 16:50:29
+                    :</strong> 2024-02-26 16:49:36
             </li>
         
         <li>
