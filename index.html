@@ -98,7 +98,119 @@
     
     
     
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -590,21 +702,24 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
-                        <a href="/2024/08/09/hello-world/">
-                            Hello World
+                        <a href="/2024/08/09/%E7%BD%91%E7%BB%9C%E6%B5%81/">
+                            网络流
                         </a>
                     </h3>
 
                     <div class="home-article-content markdown-body">
                         
-                            Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
+                            最大流最小割
+Dinic算法
+时间复杂度
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565...
                         
                     </div>
 
                     <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Aug 09 2024 16:24:42 GMT+0800">
+            <span class="home-article-date" data-date="Fri Aug 09 2024 20:32:07 GMT+0800">
                 
                     2024-08-09
                 
@@ -612,9 +727,21 @@
         </span>
         
         
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/acm/">acm</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
     </div>
 
-    <a href="/2024/08/09/hello-world/">阅读全文<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2024/08/09/%E7%BD%91%E7%BB%9C%E6%B5%81/">阅读全文<span class="seo-reader-text">网络流</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
                 </div>
@@ -697,11 +824,11 @@
 
                     <div class="home-article-content markdown-body">
                         
-                            AC自动机本质是在$tire$树上做$kmp$
-普通$kmp$可以看作链式的AC自动机
-AC自动机由链变为树，使用$bfs$遍历
+                            AC自动机本质是在树上做
+普通可以看作链式的AC自动机
+AC自动机由链变为树，使用遍历
 洛谷P5357 
-123456789101112131415161718192021222324252627282930...
+123456789101112131415161718192021222324252627282930313233343536373839404...
                         
                     </div>
 
@@ -753,8 +880,8 @@ AC自动机由链变为树，使用$bfs$遍历
                     <div class="home-article-content markdown-body">
                         
                             KMP例题：洛谷P3375 
-$ne[i]$表示存在最大的$x(x \neq i)$, 使得$t[0:x] &#x3D; t[i - x + 1:i]$
-123456789101112131415161718192021222324252627282...
+表示存在最大的, 使得
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152str...
                         
                     </div>
 
@@ -805,7 +932,7 @@ $ne[i]$表示存在最大的$x(x \neq i)$, 使得$t[0:x] &#x3D; t[i - x + 1:i]$
 
                     <div class="home-article-content markdown-body">
                         
-                            朴素版1234567891011121314151617181920212223242526272829303132333435363738394041424344454647struct Dijstra_ &#123;	struct node &#...
+                            朴素版1234567891011121314151617181920212223242526272829303132333435363738394041424344454647struct Dijstra_ {	struct node {		int ...
                         
                     </div>
 
@@ -856,7 +983,7 @@ $ne[i]$表示存在最大的$x(x \neq i)$, 使得$t[0:x] &#x3D; t[i - x + 1:i]$
 
                     <div class="home-article-content markdown-body">
                         
-                            并查集123456789101112131415161718192021222324252627282930313233343536373839404142struct DSU &#123;	std::vector&lt;int&gt; p, siz...
+                            并查集123456789101112131415161718192021222324252627282930313233343536373839404142struct DSU {	std::vector&lt;int&gt; p, siz;	int...
                         
                     </div>
 
@@ -1068,10 +1195,10 @@ is_limit: true为有约束限...
                         
                             树状数组
 区间求和
-  数组形式$[1, n]$
+  数组形式
 
 
-1234567891011121314151617181920212223242526const int N = 5e5 + 10;int n;int tr[N];int lowbit(int x...
+1234567891011121314151617181920212223242526const int N = 5e5 + 10;int n;int tr[N];int lowbit(int x) {    /...
                         
                     </div>
 
